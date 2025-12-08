@@ -58,3 +58,15 @@ h3 {
   padding: 0.5px;
   border-radius: 5px;
 }
+
+/*REGLA 4.11 - Los elementos div que sean descendientes de un elemento con id "gallery" tendrán un ancho width de 100%*/
+#gallery div {
+  width: 100%;
+}
+
+/*REGLA 4.12 - Los elementos img tendrán un ancho width de 100%, un border: solid darkcyan 1px; y esquinas redondeadas con valor de 5px*/
+img {
+  width: 100%;
+  border: solid darkcyan 1px;
+  border-radius: 5px;
+}
