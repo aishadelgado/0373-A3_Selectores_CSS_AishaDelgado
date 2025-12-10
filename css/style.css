@@ -5,6 +5,11 @@
   font-style: normal;
 }
 
+/* Asegura que padding y border se incluyan en el ancho total */
+* {
+  box-sizing: border-box;
+}
+
 /*REGLA 4.2 - Body en margen 0 y paddings (relleno) de izquierda y derecha en 20%*/
 body {
   margin: 0;
@@ -69,4 +74,46 @@ img {
   width: 100%;
   border: solid darkcyan 1px;
   border-radius: 5px;
+}
+
+/*BONUS - Crear tabla en HTML y estilizarla en CSS*/
+#tabla {
+  border: solid darkcyan 1px; /*Con este comando hago el borde del div*/
+}
+
+/* La tabla ocupará el 100% del ancho del contenedor #tabla y no sobresaldrá. Se utiliza table-layout: fixed para "juntar" las columnas (en vez del texto, el color, para que no se note un pequeño borde blanco en medio) y word-wrap para evitar desbordes. */
+table {
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.cabecero {
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td {
+  border-bottom: 1px solid #ccc;
+  padding: 8px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+tr:nth-child(2) { /*Esto me sirve para que los hijos del segundo tr tengan el fondo gris claro*/
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(4) { /*Esto me sirve para que los hijos del cuarto tr tengan el fondo gris claro*/
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(6) { /*Esto me sirve para que los hijos del sexto tr tengan el fondo gris claro*/
+  background-color: #f0f0f0;
+}
+
+.Selector {
+  font-style: italic;
+  text-decoration: underline;
 }
